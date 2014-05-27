@@ -12,10 +12,10 @@ public class DropDown {
 	 * @param object return page object 
 	 * @param textValue text to locate drop down option 
 	 */
-	public DropDown(WebDriver driver, WebElement element, Class<?> pageObject, String textValue ) {}
+	public DropDown(WebDriver driver, WebElement element, Object pageObject, String textValue ) {}
 
 
-    public Class<?> interactDropdown(WebDriver driver, WebElement element, Class<?> pageObject, String textValue) {
+    public Object interactDropdown(WebDriver driver, WebElement element, Object pageObject, String textValue) {
     	Select select = new Select(element);
     	select.selectByVisibleText(textValue);
     	return pageObject;
